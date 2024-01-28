@@ -80,7 +80,7 @@ matriz_pertenencia.show(truncate=False)
 
 # Guardar el DataFrame 'df_spark' en un archivo de csv
 
-matriz_pertenencia.write.format('com.databricks.spark.csv').option('header', 'true').save('hdfs://master:9000/user/hadoop/contaminantes/datafinal_clusters.csv')
+matriz_pertenencia.write.format('com.databricks.spark.csv').option('header', 'true').save('hdfs://master:9000/user/hadoop/contaminantes/datafinal_clusters_suple.csv')
 
 # Detén la sesión de Spark
 spark.stop()
